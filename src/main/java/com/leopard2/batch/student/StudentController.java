@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-
-
 @RestController
 @RequestMapping("/students")
 @RequiredArgsConstructor
@@ -44,7 +42,7 @@ public class StudentController {
 
 	
     // 매일 13시 30분 58초에 실행하도록 작업 시간 등록
-    @Scheduled(cron = "58 30 13 * * *")
+    @Scheduled(cron = "0,20,40 * 10 * * *")
 	public void testJob() {
         log.info("--------- TEST Cron Job --------");   
         JobParameters jobParameters = new JobParametersBuilder()

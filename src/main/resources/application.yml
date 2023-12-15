@@ -3,7 +3,7 @@ spring:
     datasource:
         url: jdbc:postgresql://localhost:5432/batch
         username: batchuser
-        password: 비밀번호
+        password: leopard2
         driver-class-name: org.postgresql.Driver
     jpa:
         hibernate:
